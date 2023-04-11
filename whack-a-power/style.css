@@ -1,0 +1,38 @@
+#game-board{
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr) ;
+    grid-template-columns: repeat(3, 1fr) ;
+    max-width: 600px;
+    text-align: center;
+}
+
+.game-button{
+    font-size: 30px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    max-width: 200px;
+    cursor: pointer;
+}
+
+.game-button>span{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.show > span{
+    opacity: 1;
+    
+}
+
+.not-clickable{
+    pointer-events: none;
+}
+
+#start-game{
+    font-size: 10px;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto 0;
+}
+
